@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+*{
+    margin: 0 auto;
+}
+
+.content{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)),url(imagen.jpg);
+}
+.navbar{
+    width: 100%;
+    height: 40px;
+    color: azure;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content-cv{
+    background-color: white;
+    width: 65%;
+    height: 340px;
+    position: absolute;
+    left: 220px;
+    top: 230px;
+}
+.content-body{
+    width: 100%;
+    height: 500px;
+    padding-top: 22%;
+
+}
+.text-body{
+    margin-left: 22%;
+    margin-right: 22%;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(70, 68, 68);
+}
+.img-cv{
+    border-radius: 60%;
+    object-fit: cover;
+    height:100%;
+    float: left;
+}
+.text{
+    margin-top: 55px;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text-study{
+    color: rgb(139, 136, 136);
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text-info{
+    margin: 20px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.js{
+    background-color: rgb(7, 8, 61);
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 340px;
+    right: 0.2px;
+    text-align: center;
+}
+.face{
+    margin-top: 2%;
+    margin-right: 3%;
+    color: white;
+}
+.insta{
+    margin-top: 2%;
+    color: white;
+}
+.btn-js{
+    background-color: rgb(7, 8, 61);
+    color: white;
+    border: 2px solid white;
+    border-radius: 80px;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: 45%;
+    cursor: pointer;
+}
