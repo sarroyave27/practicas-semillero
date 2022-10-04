@@ -6,8 +6,7 @@
 
 .header{
     width: 100%;
-    height: 350px;
-    background-color: cornsilk;
+    height: 270px;
 }
 .header-text{
     text-align: center;
@@ -22,26 +21,42 @@
     border: none;
     position: absolute;
     left: 46.5%;
-    top: 25%;
+    top: 28%;
     font-size: 25px;
     font-family: 'Bungee Spice', cursive;
 }
 .content-game{
     width: 100%;
-    height: 480px;
+    height: 550px;
     background-color: antiquewhite;
     float: left;
 }
 .player-one{
     width: 25%;
-    height: 360px;
+    height: 380px;
     float: left;
-    background-color: aqua;
 }
 .game{
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 45%;
+    left: 35%;
+}
+.partidas{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+    padding-bottom: 5%;
+}
+#text-partidas{
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+.reloj{
+    padding-left: 5%;
+    float: left;
+	font-size: 12px;
+    font-family: 'Fredoka One', cursive;
+    color: #363431;
 }
 .game section{
     display: flex;
@@ -59,23 +74,21 @@
     text-align: center;
     border-radius: 10px;
     background: #ffff;
-
 }
 .player-two{
     width: 25%;
-    height: 360px;
+    height: 380px;
     float: right;
-    background-color: aqua;
 }
 .img-avataro{
-    width: 60%;
+    width: 70%;
     height: 260px;
     margin-top: 5%;
     margin-left: 15%;
     border-radius: 50%;
 }
 .img-avatart{
-    width: 60%;
+    width: 70%;
     height: 260px;
     margin-top: 5%;
     margin-left: 18%;
@@ -90,5 +103,19 @@
     font-family: 'Fredoka One', cursive;
     font-size: 35px;
     margin-left: 28%;
-
+}
+.score-1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+}
+.score-2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+}
+.timer{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
 }

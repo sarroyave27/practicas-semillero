@@ -10,14 +10,24 @@
   <body>
     <section class="header">
         <p class="header-text">Triqui</p>
-        <button class="btn-game">Start Game</button>
+        <button class="btn-game" id="btn-game">Start Game</button>
     </section>
     <section class="content-game">
         <div class="player-one">
             <img src="avatar-one.png" alt="" class="img-avataro">
             <div class="name-one">Player One</div>
+            <div class="score-1">Score:</div>
+            <div class="reloj">Timer:</div>
+            <div class="reloj" id="horas">00</div>
+            <div class="reloj" id="minutos">:00</div>
+            <div class="reloj" id="segundos">:00</div>
+            <div class="reloj" id="milisegundos">:00</div>
         </div>
         <div class="game">
+            <div class="partidas">Numero Partidas:</div>
+            <input type="number" name="" id="text-partidas" min="1" value="1" step="2">
+            <input type="radio" name="player1" id="player1" checked>Jugador 1
+            <input type="radio" name="player2" id="player2">Jugador 2
             <section>
                 <span></span>
                 <span></span>
@@ -36,8 +46,11 @@
         </div>
         <div class="player-two">
             <img src="avatar-one.png" alt="" class="img-avatart">
-            <div class="name-two">Player two</div>            
+            <div class="name-two">Player two</div>
+            <div class="score-2">Score:</div> 
+            <div class="timer">Time:</div>         
         </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
