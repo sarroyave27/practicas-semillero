@@ -9,48 +9,56 @@
   </head>
   <body>
     <section class="header">
-        <p class="header-text">Triqui</p>
-        <button class="btn-game" id="btn-game">Start Game</button>
+      <p class="header-text">Triqui</p>
+      <button class="btn-game" id="btn-game" onclick="iniciar()">Start Game</button>
     </section>
     <section class="content-game">
-        <div class="player-one">
-            <img src="avatar-one.png" alt="" class="img-avataro">
-            <div class="name-one">Player One</div>
-            <div class="score-1">Score:</div>
-            <div class="reloj">Timer:</div>
-            <div class="reloj" id="horas">00</div>
-            <div class="reloj" id="minutos">:00</div>
-            <div class="reloj" id="segundos">:00</div>
-            <div class="reloj" id="milisegundos">:00</div>
-        </div>
-        <div class="game">
-            <div class="partidas">Numero Partidas:</div>
-            <input type="number" name="" id="text-partidas" min="1" value="1" step="2">
-            <input type="radio" name="player1" id="player1" checked>Jugador 1
-            <input type="radio" name="player2" id="player2">Jugador 2
-            <section>
-                <span class="" onclick="marcar(event)"></span>
-                <span class="" onclick="marcar(event)"></span>
-                <span  class="" onclick="marcar(event)"></span>
-            </section>
-            <section>
-                <span class="" onclick="marcar(event)"></span>
-                <span class="" onclick="marcar(event)"></span>
-                <span class="" onclick="marcar(event)"></span>
-            </section>
-            <section>
-                <span class="" onclick="marcar(event)"></span>
-                <span class="" onclick="marcar(event)"></span>
-                <span class="" onclick="marcar(event)"></span>
-            </section>
-        </div>
-        <div class="player-two">
-            <img src="avatar-one.png" alt="" class="img-avatart">
-            <div class="name-two">Player two</div>
-            <div class="score-2">Score:</div> 
-            <div class="timer">Time:</div>         
-        </div>
+      <div class="player-one">
+        <img src="avatar-one.png" alt="" class="img-avataro" />
+        <div class="name-one">Player One</div>
+        <div class="score-1">Score:</div>
+        <div class="tiempo" id="tiempo">00:00:00.000</div>
+        <div class="botones-tiempo">
+            <div class="btn-time"><i class="fas fa-play"></i></div>
+            <div class="btn-time" onclick="pausar()"><i class="fas fa-pause"></i></div>
+            <div class="btn-time" onclick="reiniciar()"><i class="fas fa-undo-alt"></i></div>
+          </div>
+      </div>
+      <div class="game">
+        <div class="partidas">Numero Partidas:</div>
+        <input type="number"name=""id="text-partidas"min="1"value="1"step="2"/>
+        <input type="radio" name="player1" id="player1" checked />Jugador 1
+        <input type="radio" name="player2" id="player2" />Jugador 2
+        <section>
+          <span class="" onclick="marcar(event)"></span>
+          <span class="" onclick="marcar(event)"></span>
+          <span class="" onclick="marcar(event)"></span>
+        </section>
+        <section>
+          <span class="" onclick="marcar(event)"></span>
+          <span class="" onclick="marcar(event)"></span>
+          <span class="" onclick="marcar(event)"></span>
+        </section>
+        <section>
+          <span class="" onclick="marcar(event)"></span>
+          <span class="" onclick="marcar(event)"></span>
+          <span class="" onclick="marcar(event)"></span>
+        </section>
+      </div>
+      <div class="player-two">
+        <img src="avatar-one.png" alt="" class="img-avatart" />
+        <div class="name-two">Player two</div>
+        <div class="score-2">Score:</div>
+        <div class="tiempo" id="tiempo2">00:00:00.000</div>
+        <div class="botones-tiempo2">
+            <div class="btn-time" onclick="iniciar2()"><i class="fas fa-play"></i></div>
+            <div class="btn-time" onclick="pausar2()"><i class="fas fa-pause"></i></div>
+            <div class="btn-time" onclick="reiniciar2()"><i class="fas fa-undo-alt"></i></div>
+          </div>
+      </div>
+      </div>
     </section>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/33f1813c39.js"crossorigin="anonymous"></script>
   </body>
 </html>

@@ -6,17 +6,73 @@ const rPlayer = document.querySelector('player1')
 let turno = 1;
 
 
+let tiempoRef = Date.now()
+let cronometrar = false;
+let acumulado = 0
+
+// let tiempoRef2 = Date.now()
+// let cronometrar2 = false
+// let acumulado2 = 0
+
+function iniciar() {
+    cronometrar = true
+}
+
+function pausar() {
+    cronometrar = false
+}
+
+function reiniciar() {
+    acumulado = 0
+}
+
+// function iniciar2() {
+//     cronometrar2 = true
+// }
+
+// function pausar2() {
+//     cronometrar2 = false
+// }
+
+// function reiniciar2() {
+//     acumulado2 = 0
+// }
+
+// btn.addEventListener('click', () => {
+//     if(cronometrar === false) {
+//             setInterval(() => {
+//                 let tiempo = document.getElementById("tiempo")
+//                 if (cronometrar) {
+//                     acumulado += Date.now() - tiempoRef
+//                 }
+//                 tiempoRef = Date.now()
+//                 tiempo.innerHTML = formatearMS(acumulado)
+//             }, 1000 / 60);
+//         }
+// })
 btn.addEventListener('click', () => {
     if (start.value > 0) {
         if (start.value % 2 == 0) {
             alert('Ingrese un numero impar');
             error();
         } else {
-            start.readOnly = true;
-            if (rPlayer.checked) {
-                cronometro(time1);
-            } else
-                cronometro(time2);
+            setInterval(() => {
+                let tiempo = document.getElementById("tiempo")
+                if (cronometrar) {
+                    acumulado += Date.now() - tiempoRef
+                }
+                tiempoRef = Date.now()
+                tiempo.innerHTML = formatearMS(acumulado)
+            }, 1000 / 60);
+            
+            // setInterval(() => {
+            //     let tiempo2 = document.getElementById("tiempo2")
+            //     if (cronometrar2) {
+            //         acumulado2 += Date.now() - tiempoRef2
+            //     }
+            //     tiempoRef2 = Date.now()
+            //     tiempo2.innerHTML = formatearMS(acumulado2)
+            // }, 1000 / 60);
         }
     } else {
         error();
@@ -29,6 +85,22 @@ const error = () => {
 
 }
 
+
+function formatearMS(tiempo_ms) {
+    let MS = tiempo_ms % 1000
+    
+    let St = Math.floor(((tiempo_ms - MS) / 1000))
+    
+    let S = St%60
+    let M = Math.floor((St / 60) % 60)
+    let H = Math.floor((St/60 / 60))
+    Number.prototype.ceros = function (n) {
+        return (this + "").padStart(n, 0)
+    }
+
+    return H.ceros(2) + ":" + M.ceros(2) + ":" + S.ceros(2)
+        + "." + MS.ceros(3)
+}
 /*function cronometro(pausa){
         time1.innerHTML=0;
         t = setInterval(()=>{
@@ -43,44 +115,50 @@ function evaluar(elemento) {
     if (clickear.children[4].children[0].innerHTML == elemento &&
         clickear.children[4].children[1].innerHTML == elemento &&
         clickear.children[4].children[2].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
+        alert("Ha ganado: " + elemento)
     }
     if (clickear.children[5].children[0].innerHTML == elemento &&
         clickear.children[5].children[1].innerHTML == elemento &&
         clickear.children[5].children[2].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
+        alert("Ha ganado: " + elemento)
     }
     if (clickear.children[6].children[0].innerHTML == elemento &&
         clickear.children[6].children[1].innerHTML == elemento &&
         clickear.children[6].children[2].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
-    }
+        alert("Ha ganado: " + elemento)
+        }
     //  VERTICLES    
     if (clickear.children[4].children[0].innerHTML == elemento &&
         clickear.children[5].children[0].innerHTML == elemento &&
         clickear.children[6].children[0].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
-    }
+        alert("Ha ganado: " + elemento)
+
+        }
     if (clickear.children[4].children[1].innerHTML == elemento &&
         clickear.children[5].children[1].innerHTML == elemento &&
         clickear.children[6].children[1].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
-    }
+        alert("Ha ganado: " + elemento)
+
+        }
     if (clickear.children[4].children[2].innerHTML == elemento &&
         clickear.children[5].children[2].innerHTML == elemento &&
         clickear.children[6].children[2].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
-    }
+        alert("Ha ganado: " + elemento)
+        }
     //  DIAGONALES 
     if (clickear.children[4].children[0].innerHTML == elemento &&
         clickear.children[5].children[1].innerHTML == elemento &&
         clickear.children[6].children[2].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
-    }
+        alert("Ha ganado: " + elemento)
+        }
     if (clickear.children[4].children[2].innerHTML == elemento &&
         clickear.children[5].children[1].innerHTML == elemento &&
         clickear.children[6].children[0].innerHTML == elemento) {
-        console.log("Ha ganado: " + elemento)
+        alert("Ha ganado: " + elemento)
+        }
+
+    if (alert === true){
+        elemento.readOnly = true;
     }
 }
 

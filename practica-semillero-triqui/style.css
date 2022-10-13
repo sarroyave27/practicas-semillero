@@ -21,7 +21,7 @@
     border: none;
     position: absolute;
     left: 46.5%;
-    top: 22%;
+    top: 30%;
     font-size: 25px;
     font-family: 'Bungee Spice', cursive;
 }
@@ -38,7 +38,7 @@
 }
 .game{
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 38%;
 }
 .partidas{
@@ -51,12 +51,30 @@
     margin-left: 100px;
     margin-bottom: 15px;
 }
-.reloj{
-    padding-left: 5%;
+.tiempo{
+    padding-left: 28%;
     float: left;
-	font-size: 12px;
+	font-size: 25px;
     font-family: 'Fredoka One', cursive;
     color: #363431;
+}
+.botones-tiempo{
+    float: inherit;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.botones-tiempo2{
+    float: inherit;
+    margin-right: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-time {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    padding: 8px;
 }
 .game section{
     display: flex;
