@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fredoka+One&display=swap');
+*{
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 280px;
+}
+.header-text{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 75px;
+    padding-top: 6%;
+}
+.btn-game{
+    width: 8%;
+    height: 65px;
+    background-color: bisque;
+    border: none;
+    position: absolute;
+    left: 46.5%;
+    top: 30%;
+    font-size: 25px;
+    font-family: 'Bungee Spice', cursive;
+}
+.btn-game2{
+    width: 8%;
+    height: 70px;
+    background-color: bisque;
+    border: none;
+    position: absolute;
+    left: 46.5%;
+    top: 93%;
+    font-size: 20px;
+    font-family: 'Bungee Spice', cursive;
+    cursor: pointer;
+}
+.content-game{
+    width: 100%;
+    height: 700px;
+    background-color: antiquewhite;
+    float: left;
+}
+.player-one{
+    width: 25%;
+    height: 380px;
+    float: left;
+}
+.game{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+}
+.partidas{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+    padding-bottom: 5%;
+}
+#text-partidas{
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+.tiempo{
+    padding-left: 28%;
+    float: left;
+	font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    color: #363431;
+}
+.botones-tiempo{
+    float: inherit;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.botones-tiempo2{
+    float: inherit;
+    margin-right: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-time {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    padding: 8px;
+}
+.game section{
+    display: flex;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.game section span{
+    display: block;
+    height: 130px;
+    width: 140px;
+    margin: 2px;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ffff;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Fredoka One', cursive;
+
+}
+.player-two{
+    width: 25%;
+    height: 380px;
+    float: right;
+}
+.img-avataro{
+    width: 70%;
+    height: 260px;
+    margin-top: 5%;
+    margin-left: 15%;
+    border-radius: 50%;
+}
+.img-avatart{
+    width: 70%;
+    height: 260px;
+    margin-top: 5%;
+    margin-left: 18%;
+    border-radius: 50%;
+}
+.name-one{
+    font-family: 'Fredoka One', cursive;
+    font-size: 35px;
+    margin-left: 28%;
+}
+.name-two{
+    font-family: 'Fredoka One', cursive;
+    font-size: 35px;
+    margin-left: 28%;
+}
+.score-1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+}
+.score-2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+}
+.timer{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-left: 28%;
+}
